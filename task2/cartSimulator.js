@@ -1,3 +1,6 @@
+var prompt = require('prompt-sync')();
+
+
 const cart = {
     cartArray: [],
     addToCart(product) {
@@ -23,11 +26,11 @@ const cart = {
     standBy(command) {
       switch (command) {
         case 'add':
-          const productToAdd = prompt('Enter the product to add:');
+          const productToAdd = prompt('Enter the product to add: ');
           this.addToCart(productToAdd);
           break;
         case 'remove':
-          const productToRemove = prompt('Enter the product to remove:');
+          const productToRemove = prompt('Enter the product to remove: ');
           this.removeFromCart(productToRemove);
           break;
         case 'show-items':
