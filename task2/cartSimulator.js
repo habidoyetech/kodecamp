@@ -48,10 +48,5 @@ const cart = {
     },
   };
   
-  // Example usage:
-  cart.standBy('add'); // Adds a product to the cart
-  cart.standBy('remove'); // Removes a product from the cart
-  cart.standBy('show-items'); // Shows all items in the cart
-  cart.standBy('length'); // Logs the number of products in the cart
-  cart.standBy('exit'); // Exits the program
+ 
   
